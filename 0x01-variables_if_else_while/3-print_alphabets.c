@@ -2,24 +2,25 @@
 /**
  * main - print alpha in caps and low case
  *
- * Return: (0)
+ * Return: Always 0 (success)
  *
  */
+
 int main(void)
 {
-	char Lower = 'a';
-	char Upper = 'A';
+	int lowerCase = 'a';
+	int upperCase = 'A';
 
-	while (Lower <= 'z')
+	while (lowerCase <= 'z')
 	{
-		putchar(Lower);
-		Lower++;
+		putchar(lowerCase);
+		lowerCase += 1;
 	}
-	while (Upper <= 'Z')
+	while (upperCase <= 'Z')
 	{
-		putchar(Upper);
-		Upper++;
+		putchar(upperCase);
+		upperCase += 1;
 	}
 	putchar('\n');
-	return (0)
+	return (0);
 }
