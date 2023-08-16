@@ -1,26 +1,21 @@
 #include "main.h"
 /**
- * print _alphabet - utilizes on the _putchar function to print alphabet a - z
+ * print _alphabet_x10 - prints alphabets x10
  *
- * Return: always 0
+ * Description: using _putchar to print
+ *
  */
-
 void print_alphabet_x10(void);
 {
-	char ch ;
-	int ch;
+	char i;
+	int j;
 
-	i = 0;
-
-	while (i < 10)
+	for (j = 0; j < 10; j++)
 	{
-		ch = 'a';
-		while (ch <= 'z')
+		for (i = 'a'; i <= 'z'; i++)
 		{
-			_putchar(ch);
-			ch++;
+			_putchar(i);
 		}
 		_putchar('\n');
-		i++;
-		{
+	}
 }
